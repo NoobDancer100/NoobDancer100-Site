@@ -2,10 +2,15 @@
 </script>
 
 <template>
-  <h1>NoobDancer100</h1>
-  <p>The best developer of all time!</p>
+  <div class="content">
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
-
+.content {
+  margin: 5px;
+  
+  background-color: #333333;
+}
 </style>
