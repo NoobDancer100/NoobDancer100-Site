@@ -1,9 +1,11 @@
 import { createWebHistory, createRouter } from 'vue-router'
 
-import HomeView from './pages/Home.vue'
+import Home from './pages/Home.vue'
+import ModList from './pages/ModList.vue'
 
 const routes = [
-  { path: '/', component: HomeView },
+  { path: '/', component: Home },
+  { path: '/strangefuture-modlist', component: ModList }
 ]
 
 const router = createRouter({
