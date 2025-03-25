@@ -42,10 +42,6 @@ async function getProjectFromModrinth(versionId) {
     }
 }
 
-function downloadProject(mod) {
-    
-}
-
 onMounted(() => {
     getModList()
 })
@@ -55,7 +51,7 @@ onMounted(() => {
     <h1>Strange Future: Mod List</h1>
     <h2>Download Neoforge</h2>
     <p>This is a neoforge sever, meaning it ONLY works with neoforge.</p>
-    <a href="https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.139/neoforge-21.1.139-installer.jar" class="download">Download Neoforge</a>
+    <a href="https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.139/neoforge-21.1.139-installer.jar">Download Neoforge</a>
     <h2>Required Mods</h2>
     <div class="modList">
         <div class="mod" v-for="mod in modList.required">
