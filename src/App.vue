@@ -10,7 +10,5 @@
 <style scoped>
 .content {
   margin: 5px;
-  
-  background-color: #333333;
 }
 </style>
