@@ -53,7 +53,9 @@ onMounted(() => {
 
 <template>
     <h1>Strange Future: Mod List</h1>
-    <!-- TODO: CALL THE MODRINTH API TO GET MOD DATA -->
+    <h2>Download Neoforge</h2>
+    <p>This is a neoforge sever, meaning it ONLY works with neoforge.</p>
+    <a href="https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.139/neoforge-21.1.139-installer.jar" class="download"></a>
     <h2>Required Mods</h2>
     <div class="modList">
         <div class="mod" v-for="mod in modList.required">
@@ -78,6 +80,7 @@ onMounted(() => {
             </div>
         </div>
     </div>
+    <i>Mod Suggestions can ONLY be from <a href="https://modrinth.com/">modrinth</a></i>
 </template>
 
 <style scoped lang="scss">
@@ -97,8 +100,11 @@ onMounted(() => {
         .modInfo {
             display: flex;
             flex-direction: column;
-            
-            .download {
+        }
+    }
+}
+
+.download {
                 margin-top: auto;
                 margin-bottom: 5px;
                 margin-left: 15px;
@@ -111,7 +117,4 @@ onMounted(() => {
 
                 font-weight: 700;
             }
-        }
-    }
-}
 </style>
